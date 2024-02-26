@@ -7,10 +7,27 @@ import warnings
 # Ignore all warnings
 warnings.filterwarnings("ignore")
 
+
+import requests
+import pickle
+
+# URL of the pickled model
+model_url = 'https://github.com/arj0505/Kanerika_HousePrice_Prediction/raw/main/house_price.pickle'
+
+# Download the model
+response = requests.get(model_url)
+with open('house_price.pickle', 'wb') as f:
+    f.write(response.content)
+
 # Load the model
-model_path = 'https://github.com/arj0505/Kanerika_HousePrice_Prediction/blob/main/house_price.pickle'
-with open(model_path, 'rb') as model_file:
+with open('house_price.pickle', 'rb') as model_file:
     model = pickle.load(model_file)
+
+
+# Load the model
+#model_path = 'https://github.com/arj0505/Kanerika_HousePrice_Prediction/blob/main/house_price.pickle'
+#with open(model_path, 'rb') as model_file:
+#    model = pickle.load(model_file)
 
 st.title('House Price Prediction App 🏠')
 
