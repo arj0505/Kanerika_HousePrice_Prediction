@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Load the model
-model_path = 'house_price.pickle'
+model_path = 'https://github.com/arj0505/Kanerika_HousePrice_Prediction/blob/main/house_price.pickle'
 with open(model_path, 'rb') as model_file:
     model = pickle.load(model_file)
 
