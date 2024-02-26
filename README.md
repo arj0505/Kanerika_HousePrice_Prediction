@@ -38,3 +38,8 @@ We assume that the features used in the model are sufficient to predict house pr
 
 ## Conclusion
 The Ridge Regression model performs well in predicting house prices based on the given dataset. Additional features or data sources could potentially improve the model's performance.
+
+## "House Price Prediction Output"
+
+
+![Image Alt text](/kanerika_Assign_results.gif)
