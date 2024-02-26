@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Load the model
-model_path = r'C:\Users\arj05\OneDrive\Desktop\Assignment\house_price.pickle'
+model_path = r'house_price.pickle'
 with open(model_path, 'rb') as model_file:
     model = pickle.load(model_file)
 
